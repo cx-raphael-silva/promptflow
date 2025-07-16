@@ -62,6 +62,7 @@ jobs:
           pip list
 
       - name: Azure login
+        continue-on-error: true
         uses: azure/login@v1
         with:
           client-id: ${{ secrets.CLIENT_ID }}
